@@ -10,6 +10,7 @@
 		320A9E19204AD4FE0082417C /* UIColor_RandomSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A9E0F204AD4FE0082417C /* UIColor_RandomSwift.framework */; };
 		320A9E1E204AD4FE0082417C /* UIColor_RandomSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A9E1D204AD4FE0082417C /* UIColor_RandomSwiftTests.swift */; };
 		320A9E20204AD4FE0082417C /* UIColor_RandomSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 320A9E12204AD4FE0082417C /* UIColor_RandomSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320A9E2A204AD5090082417C /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A9E29204AD5090082417C /* UIColor+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		320A9E18204AD4FE0082417C /* UIColor+RandomSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIColor+RandomSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		320A9E1D204AD4FE0082417C /* UIColor_RandomSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_RandomSwiftTests.swift; sourceTree = "<group>"; };
 		320A9E1F204AD4FE0082417C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A9E29204AD5090082417C /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				320A9E12204AD4FE0082417C /* UIColor_RandomSwift.h */,
+				320A9E29204AD5090082417C /* UIColor+Ex.swift */,
 				320A9E13204AD4FE0082417C /* Info.plist */,
 			);
 			path = "UIColor+RandomSwift";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					320A9E0E204AD4FE0082417C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					320A9E17204AD4FE0082417C = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320A9E2A204AD5090082417C /* UIColor+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		320A9E24204AD4FE0082417C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.starhoshi.lastfmclient.UIColor-RandomSwift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		320A9E25204AD4FE0082417C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		320A9E27204AD4FE0082417C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NG7BR536A;
 				INFOPLIST_FILE = "UIColor+RandomSwiftTests/Info.plist";
@@ -390,6 +399,7 @@
 		320A9E28204AD4FE0082417C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NG7BR536A;
 				INFOPLIST_FILE = "UIColor+RandomSwiftTests/Info.plist";
