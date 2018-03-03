@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name                      = "UIColor+RandomSwift"
   s.version                   = "0.0.1"
   s.summary                   = "Generate random UIColors written in Swift"
-  s.homepage                  = "http://EXAMPLE/UIColor+RandomSwift"
+  s.homepage                  = "https://github.com/starhoshi/UIColor-RandomSwift"
   s.license                   = { :type => 'MIT', :file => 'LICENSE' }
   s.author                    = { "star__hoshi" => "kensuke1751@gmail.com" }
   s.social_media_url          = "https://twitter.com/star__hoshi"
