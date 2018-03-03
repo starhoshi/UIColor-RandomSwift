@@ -4,7 +4,7 @@ Generate random UIColors written in Swift.
 # Installation
 
 ```
-pod "UIColor+RandomSwift"
+pod 'UIColor+RandomSwift'
 ```
 
 # Usage
